@@ -5,6 +5,11 @@
   "repository": "https://arrow-gunji@github.com/ArrowDevLab/ReactScheduler.git",
   "author": "ArlecchinoShion <arlecchino.shion@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "flux": "^3.1.3",
