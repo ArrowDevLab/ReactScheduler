@@ -2,4 +2,3 @@ node_modules/
 .vscode/
 yarm.lock
 bbs.db
-public/bundle.js
