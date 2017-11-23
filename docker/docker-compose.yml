@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  pgsql:
+    build: ./docker/db/
+    restart: always
+  app: 
+    build: ./docker/app/
+    ports: 
+      - "20006:20006"
+    volumes:
+      -    /usr/src/react-scheduler/node_modules
+      -  .:/usr/src/react-scheduler
+    depends_on: 
+      - pgsql
+    restart: always
