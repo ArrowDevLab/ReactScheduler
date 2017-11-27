@@ -2,15 +2,14 @@ version: '2'
 
 services:
   pgsql:
-    build: ./docker/db/
+    image: postges:9.6
     restart: always
   app: 
     build: ./docker/app/
     ports: 
-      - "20006:20006"
+      - "3000:3000"
     volumes:
-      -    /usr/src/react-scheduler/node_modules
-      -  .:/usr/src/react-scheduler
+      -  ../:/app
     depends_on: 
       - pgsql
     restart: always
