@@ -1,15 +1,9 @@
 version: '2'
-
 services:
-  pgsql:
-    image: postges:9.6
-    restart: always
   app: 
     build: ./docker/app/
     ports: 
-      - "3000:3000"
+      - "3001:3001"
     volumes:
       -  ../:/app
-    depends_on: 
-      - pgsql
     restart: always
