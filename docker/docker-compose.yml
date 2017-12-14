@@ -1,8 +1,8 @@
-version: '3'
+version: '2'
 services:
-  app: 
+  react_app: 
     build: ./app/
     ports:
      - "3001:3001"
     volumes:
-     - ../:/app
+     - ..:/app_dev

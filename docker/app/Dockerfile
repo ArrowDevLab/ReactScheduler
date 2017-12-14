@@ -1,6 +1,8 @@
 FROM node:6.12
 
-RUN cd /app
+ADD ../../ /app_dev
+WORKDIR /app_dev
+RUN ls
 
 RUN npm install
 

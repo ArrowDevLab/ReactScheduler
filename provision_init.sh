@@ -15,8 +15,3 @@ sudo apt-get install -y sl
 
 sudo mkdir /opt/src
 sudo chown -R vagrant:vagrant /opt/src
-
-# sudo apt-get -y install samba
-# sudo cp -p /vagrant/conf/smb.conf /etc/samba/smb.conf
-# sudo chown root:root /etc/samba/smb.conf
-# sudo /etc/init.d/samba restart
