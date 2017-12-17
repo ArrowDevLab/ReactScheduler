@@ -1,9 +1,9 @@
 FROM node:6.12
 
-ADD ../../ /app_dev
+ADD app /app_dev
 WORKDIR /app_dev
 RUN ls
 
 RUN npm install
 
-RUN npm run start
+CMD ["npm", "run start"]

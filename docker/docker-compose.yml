@@ -1,8 +1,6 @@
 version: '2'
 services:
   react_app: 
-    build: ./app/
+    build: node
     ports:
      - "3001:3001"
-    volumes:
-     - ..:/app_dev
