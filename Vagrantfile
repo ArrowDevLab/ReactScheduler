@@ -11,6 +11,10 @@ Vagrant.configure("2") do |config|
     vb.gui = false
   end
 
+  config.vbguest.auto_update = false
+  config.vbguest.no_remote = true
+
+  
   config.vm.network "public_network"
   config.vm.network "forwarded_port", guest: 3001, host: 3001
   config.vm.network "private_network", ip: "192.168.33.10"

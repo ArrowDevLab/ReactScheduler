@@ -6,4 +6,6 @@ RUN ls
 
 RUN npm install
 
-CMD ["npm", "run start"]
+EXPOSE 3001
+
+CMD ["node", "server.js"]
